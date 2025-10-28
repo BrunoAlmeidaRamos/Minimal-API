@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Minimal_API.Dominio.DTOs;
+using Minimal_API.Infraestrutura.Db;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,16 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<DbContexto>(options =>
+{
+  options.UseMySql(
+          builder.Configuration.GetConnectionString("mysqlConnection"),
+           ServerVersion.AutoDetect(
+               builder.Configuration.GetConnectionString("mysqlConnection")
+           )
+  );
+});
 
 var app = builder.Build();
 
