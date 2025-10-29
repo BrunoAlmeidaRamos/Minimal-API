@@ -3,22 +3,22 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Minimal_API.Dominio.Entidades
 {
-    public class Administrador
+    public class Veiculo
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
-        [StringLength(20)]
-        public string Perfil { get; set; }
+        [StringLength(200)]
+        public string Nome { get; set; }
 
         [Required]
         [StringLength(200)]
-        public string Email { get; set; }
+        public string Marca { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Senha { get; set; }
+        public int Ano { get; set; }
     }
 }
