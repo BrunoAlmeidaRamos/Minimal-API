@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
     "RelativePath": "login",
     "HttpMethod": "POST",
     "IsController": false,
@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "loginDTO",
-        "Type": "LoginDTO",
+        "Type": "Minimal_API.Dominio.DTOs.LoginDTO",
         "IsRequired": true
       }
     ],

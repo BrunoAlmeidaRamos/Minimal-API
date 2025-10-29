@@ -1,8 +1,13 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Minimal_API.Dominio.DTOs;
+using Minimal_API.Dominio.Interfaces;
+using Minimal_API.Dominio.Servicos;
 using Minimal_API.Infraestrutura.Db;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<iAdministradorServico, AdministradorServico>();
 
 // Add services to the container.
 
@@ -36,9 +41,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapPost("/login", (LoginDTO loginDTO) =>
+app.MapPost("/login", ([FromBody] LoginDTO loginDTO, iAdministradorServico administradorServico) =>
 {
-    if (loginDTO.Email == "adm@teste.com" && loginDTO.Senha == "0123456")
+    if (administradorServico.Login(loginDTO) != null)
         return Results.Ok("Login com sucesso");
 
     else
