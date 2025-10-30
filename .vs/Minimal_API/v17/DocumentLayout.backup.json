@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\dominio\\modelviews\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\dominio\\modelviews\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\dominio\\servicos\\veiculoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\dominio\\servicos\\veiculoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\minimal_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\minimal_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\dominio\\dtos\\veiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\dominio\\dtos\\veiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -103,40 +99,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Home.cs",
-              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\ModelViews\\Home.cs",
-              "RelativeDocumentMoniker": "Minimal_API\\Dominio\\ModelViews\\Home.cs",
-              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\ModelViews\\Home.cs",
-              "RelativeToolTip": "Minimal_API\\Dominio\\ModelViews\\Home.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "VeiculoServico.cs",
+              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
+              "RelativeDocumentMoniker": "Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
+              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
+              "RelativeToolTip": "Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T18:22:56.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\appsettings.json",
-              "RelativeDocumentMoniker": "Minimal_API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\appsettings.json",
-              "RelativeToolTip": "Minimal_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-29T18:17:52.813Z",
+              "WhenOpened": "2025-10-30T21:44:38.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Minimal_API",
-              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Minimal_API.csproj",
-              "RelativeDocumentMoniker": "Minimal_API\\Minimal_API.csproj",
-              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Minimal_API.csproj",
-              "RelativeToolTip": "Minimal_API\\Minimal_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-29T18:16:38.783Z",
+              "Title": "VeiculoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
+              "RelativeDocumentMoniker": "Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
+              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
+              "RelativeToolTip": "Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T21:40:48.576Z",
               "EditorCaption": ""
             },
             {
@@ -147,9 +130,9 @@
               "RelativeDocumentMoniker": "Minimal_API\\Program.cs",
               "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Program.cs",
               "RelativeToolTip": "Minimal_API\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAGIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T18:10:39.281Z",
+              "WhenOpened": "2025-10-30T18:51:56.779Z",
               "EditorCaption": ""
             }
           ]
