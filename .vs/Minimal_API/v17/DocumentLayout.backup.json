@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\dominio\\servicos\\veiculoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\dominio\\servicos\\veiculoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\dominio\\dtos\\veiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\dominio\\dtos\\veiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,41 +90,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VeiculoServico.cs",
-              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
-              "RelativeDocumentMoniker": "Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
-              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
-              "RelativeToolTip": "Minimal_API\\Dominio\\Servicos\\VeiculoServico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T21:44:38.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VeiculoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
-              "RelativeDocumentMoniker": "Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
-              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
-              "RelativeToolTip": "Minimal_API\\Dominio\\DTOs\\VeiculoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T21:40:48.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Program.cs",
               "RelativeDocumentMoniker": "Minimal_API\\Program.cs",
               "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Program.cs",
               "RelativeToolTip": "Minimal_API\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAGIAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T18:51:56.779Z",
+              "WhenOpened": "2025-10-31T17:51:39.601Z",
               "EditorCaption": ""
             }
           ]

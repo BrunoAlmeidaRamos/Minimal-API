@@ -5,22 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/": {
-      "get": {
-        "tags": [
-          "Minimal_API"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/login": {
       "post": {
         "tags": [
-          "Minimal_API"
+          "Administradores"
         ],
         "requestBody": {
           "content": {
@@ -39,10 +27,22 @@
         }
       }
     },
+    "/": {
+      "get": {
+        "tags": [
+          "Home"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/veiculos": {
       "post": {
         "tags": [
-          "Minimal_API"
+          "Veiculos"
         ],
         "requestBody": {
           "content": {
@@ -59,43 +59,25 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/WeatherForecast": {
+      },
       "get": {
         "tags": [
-          "WeatherForecast"
+          "Veiculos"
         ],
-        "operationId": "GetWeatherForecast",
+        "parameters": [
+          {
+            "name": "pagina",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -131,29 +113,6 @@
           "ano": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "WeatherForecast": {
-        "type": "object",
-        "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

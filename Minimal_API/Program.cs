@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Minimal_API.Dominio.DTOs;
@@ -6,6 +7,7 @@ using Minimal_API.Dominio.Interfaces;
 using Minimal_API.Dominio.ModelViews;
 using Minimal_API.Dominio.Servicos;
 using Minimal_API.Infraestrutura.Db;
+using System.Diagnostics.Eventing.Reader;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -63,7 +65,7 @@ if (app.Environment.IsDevelopment())
 
         // 2. Retorna o conteúdo com o Content-Type: text/html
         return Results.Content(htmlContent, "text/html");
-    });
+    }).WithTags("Home");
 
     // Mantenha as configurações do Swagger para evitar conflitos na raiz
     app.UseSwagger();
@@ -88,7 +90,8 @@ app.MapPost("/login", ([FromBody] LoginDTO loginDTO, iAdministradorServico admin
 
     else
         return Results.Unauthorized();
-});
+}).WithTags("Administradores");
+
 
 app.MapPost("/veiculos", ([FromBody] VeiculoDTO veiculosDTO, iVeiculosServico veiculosServico) =>
 {
@@ -96,7 +99,51 @@ app.MapPost("/veiculos", ([FromBody] VeiculoDTO veiculosDTO, iVeiculosServico ve
     veiculosServico.Adicionar(veiculo);
 
     return Results.Created($"/veiculos/{veiculo.Id}", veiculo);
-});
+}).WithTags("Veiculos");
+
+app.MapGet("/veiculos", ([FromQuery] int pagina, iVeiculosServico veiculosServico) =>
+{
+    if(pagina <= 0) pagina = 1;
+    {
+        if (veiculosServico.Todos(pagina).Count == 0)
+            return Results.NotFound($"A pagina que você escolheu está vazio no momento.");
+
+        var veiculos = veiculosServico.Todos(pagina);
+        return Results.Ok(veiculos);
+    }
+
+}).WithTags("Veiculos");
+
+app.MapGet("/veiculos/{id}", ([FromRoute] int id, iVeiculosServico veiculosServico) =>
+{
+    var veiculo = veiculosServico.ObterPorId(id);
+    if (veiculo == null)
+        return Results.NotFound($"Veículo com id: {id} não encontrado.");
+    return Results.Ok(veiculo);
+}).WithTags("Veiculos");
+
+app.MapPut("/veiculos/{id}", ([FromRoute] int id, [FromBody] VeiculoDTO veiculoDTO, iVeiculosServico veiculosServico) =>
+{
+    var veiculoExistente = veiculosServico.ObterPorId(id);
+    if (veiculoExistente == null)
+        return Results.NotFound($"Veículo com id: {id} não encontrado.");
+
+    veiculoExistente.Nome = veiculoDTO.Nome;
+    veiculoExistente.Marca = veiculoDTO.Marca;
+    veiculoExistente.Ano = veiculoDTO.Ano;
+    veiculosServico.Atualizar(veiculoExistente);
+    return Results.Ok(veiculoExistente);
+
+}).WithTags("Veiculos");
+
+app.MapDelete("/veiculos/{id}", ([FromRoute] int id, iVeiculosServico veiculosServico) =>
+{
+    var veiculoExistente = veiculosServico.ObterPorId(id);
+    if (veiculoExistente == null)
+        return Results.NotFound($"Veículo com id: {id} não encontrado.");
+    veiculosServico.Deletar(veiculoExistente);
+    return Results.Ok($"Veículo com id: {id} deletado com sucesso.");
+}).WithTags("Veiculos");
 
 app.Run();
 
