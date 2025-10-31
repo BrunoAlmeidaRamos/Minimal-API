@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|c:\\users\\bruno ramos\\documents\\github\\minimal_apis\\minimal_api\\minimal_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3E4FCA-D744-4D33-A270-FAB82FAEBC97}|Minimal_API\\Minimal_API.csproj|solutionrelative:minimal_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,19 +82,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Program.cs",
-              "RelativeDocumentMoniker": "Minimal_API\\Program.cs",
-              "ToolTip": "C:\\Users\\Bruno Ramos\\Documents\\GitHub\\Minimal_APIs\\Minimal_API\\Minimal_API\\Program.cs",
-              "RelativeToolTip": "Minimal_API\\Program.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAkwJYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T17:51:39.601Z",
-              "EditorCaption": ""
             }
           ]
         }

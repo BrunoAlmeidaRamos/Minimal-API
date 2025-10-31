@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Minimal_API.Dominio.DTOs;
 using Minimal_API.Dominio.Entidades;
+using Minimal_API.Dominio.Enus;
 using Minimal_API.Dominio.Interfaces;
 using Minimal_API.Dominio.ModelViews;
 using Minimal_API.Dominio.Servicos;
@@ -91,6 +92,37 @@ app.MapPost("/login", ([FromBody] LoginDTO loginDTO, iAdministradorServico admin
     else
         return Results.Unauthorized();
 }).WithTags("Administradores");
+
+app.MapPost("/administradores", ([FromBody] AdministradorDTO administradorDTO, iAdministradorServico administradorServico) =>
+{
+    var novoAdministrador = new Administrador { Email = administradorDTO.Email, Senha = administradorDTO.Senha, Perfil = administradorDTO.Perfil.ToString() ?? Perfil.Editor.ToString()};
+    administradorServico.Incluir(novoAdministrador);
+
+    if (novoAdministrador == null)
+        return Results.Conflict("Administrador com esse email já existe.");
+    return Results.Created($"/administradores/{novoAdministrador.Id}", novoAdministrador);
+}).WithTags("Administradores");
+
+
+app.MapGet("/administradores/{id}", ([FromRoute] int id, iAdministradorServico administradorServico) =>
+{
+    var administrador = administradorServico.ObterPorId(id);
+    if (administrador == null)
+        return Results.NotFound($"Administrador com id: {id} não encontrado.");
+    return Results.Ok(administrador);
+}).WithTags("Administradores");
+
+app.MapGet("/administradores", ([FromQuery] int pagina, iAdministradorServico administradorServico) =>
+{
+    if (pagina <= 0) pagina = 1;
+    {
+        if (administradorServico.Todos(pagina).Count == 0)
+            return Results.NotFound($"A pagina que você escolheu está vazio no momento.");
+        var administradores = administradorServico.Todos(pagina);
+        return Results.Ok(administradores);
+    }
+}).WithTags("Administradores");
+
 
 
 app.MapPost("/veiculos", ([FromBody] VeiculoDTO veiculosDTO, iVeiculosServico veiculosServico) =>

@@ -11,14 +11,14 @@ namespace Minimal_API.Dominio.Entidades
 
         [Required]
         [StringLength(20)]
-        public string Perfil { get; set; }
+        public string? Perfil { get; set; }
 
         [Required]
         [StringLength(200)]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Senha { get; set; }
+        public string? Senha { get; set; }
     }
 }
