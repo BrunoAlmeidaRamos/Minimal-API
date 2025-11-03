@@ -106,3 +106,11 @@ C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\D
 C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\obj\Debug\net8.0\Minimal_API.sourcelink.json
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Bruno Ramos\Documents\GitHub\Minimal_APIs\Minimal_API\Minimal_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
