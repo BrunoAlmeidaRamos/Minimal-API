@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Minimal_API.Dominio.DTOs;
 using Minimal_API.Dominio.Entidades;
 using Minimal_API.Dominio.Enus;
@@ -56,7 +57,33 @@ builder.Services.AddDbContext<DbContexto>(options =>
 });
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Insira o token JWT aqui em baixo "
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 
 var app = builder.Build();
@@ -88,7 +115,7 @@ if (app.Environment.IsDevelopment())
 
         // 2. Retorna o conteúdo com o Content-Type: text/html
         return Results.Content(htmlContent, "text/html");
-    }).WithTags("Home");
+    }).AllowAnonymous().WithTags("Home");
 
     // Mantenha as configurações do Swagger para evitar conflitos na raiz
     app.UseSwagger();
@@ -148,7 +175,7 @@ app.MapPost("/login", ([FromBody] LoginDTO loginDTO, iAdministradorServico admin
     }
     else
         return Results.Unauthorized();
-}).WithTags("Administradores");
+}).AllowAnonymous().WithTags("Administradores");
 
 app.MapPost("/administradores", ([FromBody] AdministradorDTO administradorDTO, iAdministradorServico administradorServico) =>
 {
